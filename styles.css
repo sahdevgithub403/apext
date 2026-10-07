@@ -204,43 +204,39 @@ p {
   padding: 25px 28px;
   border-radius: 14px;
   color: var(--white);
-  background: var(--navy);
+  background-color: var(--navy);
+  background-image: url("assets/atc-office.png");
+  background-position: center;
+  background-size: cover;
+}
+.hero-visual::before {
+  position: absolute;
+  inset: 0;
+  background: rgb(9 21 48 / 24%);
+  content: "";
 }
 .visual-topline {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
-  color: #aab4c6;
+  color: var(--white);
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.15em;
-}
-.visual-monogram {
-  position: absolute;
-  top: 83px;
-  left: 45px;
-  color: var(--white);
-  font-size: clamp(120px, 19vw, 220px);
-  font-weight: 800;
-  line-height: 0.9;
-  letter-spacing: -0.1em;
-}
-.visual-monogram::after {
-  position: absolute;
-  top: 1px;
-  right: -17px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--yellow);
-  content: "";
+  text-shadow: 0 1px 5px rgb(9 21 48 / 55%);
 }
 .visual-caption {
   position: absolute;
+  z-index: 1;
   bottom: 31px;
   left: 29px;
   display: flex;
   align-items: flex-start;
   gap: 13px;
+  padding: 12px 14px 12px 0;
+  color: var(--white);
+  text-shadow: 0 1px 7px rgb(9 21 48 / 55%);
 }
 .caption-rule {
   width: 28px;
@@ -259,31 +255,6 @@ p {
 .visual-caption div span {
   color: #b5bfd0;
   font-size: 11px;
-}
-.visual-stamp {
-  position: absolute;
-  right: 26px;
-  bottom: 30px;
-  display: grid;
-  width: 76px;
-  height: 76px;
-  align-content: center;
-  border: 1px solid #43506a;
-  border-radius: 50%;
-  color: #d7ddeb;
-  font-size: 7px;
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.08em;
-  text-align: center;
-  transform: rotate(9deg);
-}
-.visual-stamp span {
-  position: absolute;
-  top: -6px;
-  right: 1px;
-  color: var(--yellow);
-  font-size: 15px;
 }
 .section-pad {
   padding: 84px 0;
@@ -616,9 +587,6 @@ p {
   .hero-visual {
     min-height: 350px;
   }
-  .visual-monogram {
-    left: 27px;
-  }
   .reach-layout,
   .why-layout {
     gap: 45px;
@@ -689,21 +657,10 @@ p {
     min-height: 300px;
     padding: 21px;
   }
-  .visual-monogram {
-    top: 75px;
-    left: 25px;
-    font-size: clamp(135px, 39vw, 185px);
-  }
   .visual-caption {
     bottom: 25px;
     left: 21px;
-    max-width: calc(100% - 100px);
-  }
-  .visual-stamp {
-    right: 18px;
-    bottom: 23px;
-    width: 64px;
-    height: 64px;
+    max-width: calc(100% - 42px);
   }
   .section-pad {
     padding: 62px 0;
