@@ -43,7 +43,7 @@ body.loaded .page-loader{opacity:0;visibility:hidden}
 .hero:before{background:url("assets/atc-office.png") center 48%/cover no-repeat;transform:scale(1.035);animation:heroSlowZoom 28s ease-in-out infinite alternate}
 .hero:after{background:linear-gradient(90deg,rgba(6,17,40,.94) 0%,rgba(6,17,40,.82) 36%,rgba(6,17,40,.56) 67%,rgba(6,17,40,.38) 100%),linear-gradient(0deg,rgba(6,17,40,.76) 0%,rgba(6,17,40,.08) 55%,rgba(6,17,40,.22) 100%)}
 @keyframes heroSlowZoom{from{transform:scale(1.035)}to{transform:scale(1.09)}}
-.hero-grid{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:1fr;align-items:center;flex:1}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr;align-items:center;flex:1}
 .hero-meta{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.72);text-transform:uppercase;letter-spacing:.16em;font-size:10px;font-weight:700;margin-bottom:29px}
 .status-dot{width:7px;height:7px;background:var(--yellow);border-radius:50%;box-shadow:0 0 0 5px rgba(255,196,0,.12);animation:pulse 2.2s infinite}
 @keyframes pulse{50%{box-shadow:0 0 0 9px rgba(255,196,0,0)}}
